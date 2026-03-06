@@ -15,5 +15,13 @@ async def on_ready():
     await carregar_cogs()
     await bot.tree.sync()
     print("estou pronto!")
+    
+    await bot.change_presence(      
+        status=discord.Status.online
+    )
+    
+    await bot.change_presence(                              #listening caso queira alterar para escutando.
+        activity=discord.Activity(type=discord.ActivityType.watching, name='Hunter X Hunter! EP 72')
+    )
 
 bot.run("TOKEN DO BOT") #starta o bot

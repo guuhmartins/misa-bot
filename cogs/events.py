@@ -7,7 +7,7 @@ class eventos(commands.Cog):
         self.bot = bot
         super().__init__()
         
-    async def criar_embed(self, membro:discord.Member):
+    async def criar_embed(self, membro:discord.Member):         #cria embed do on_member_join
         minha_embed = discord.Embed(color=discord.Color.blurple())
         minha_embed.title = (f"🎀 {membro.display_name} chegou!")
         minha_embed.description = (
@@ -22,7 +22,7 @@ class eventos(commands.Cog):
         return minha_embed, imagem   
         
     @commands.Cog.listener()
-    async def on_member_join(self, membro:discord.Member):
+    async def on_member_join(self, membro:discord.Member):            
         canal = self.bot.get_channel(1473800246508126339)
         if canal is None:
             return print("Não consegui encontrar o canal :( ")
