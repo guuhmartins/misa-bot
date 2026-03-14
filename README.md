@@ -73,6 +73,6 @@ Misa was created to help manage and organize the **Misa Community** server while
 
 ## 👨‍💻 Developer
 
-Developed by **Gustavo Henrique & Maria Clara 🎀**
+Developed by **Gustavo Henrique & Maria Clara**
 GitHub: https://github.com/guuhmartins & https://github.com/bezzr
 
