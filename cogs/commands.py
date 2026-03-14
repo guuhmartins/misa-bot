@@ -50,7 +50,13 @@ class Comandos(commands.Cog):
     @commands.command()
     async def ola(self, ctx:commands.Context):
         nome = ctx.author.name
-        await ctx.reply(f"ola, {nome}! tudo bem?")
+        await ctx.reply(f"Olá, {nome}! Tudo bem?")
+
+
+    @commands.command()
+    async def boanoite(self, ctx:commands.Context):
+        nome = ctx.author.name
+        await ctx.reply(f"Boa noiteeee {nome}!")
 
 async def setup(bot):
     await bot.add_cog(Comandos(bot))
