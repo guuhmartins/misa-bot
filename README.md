@@ -19,14 +19,6 @@ More features will be added soon.
 
 ---
 
-## 🛠️ Technologies
-
-* **Python**
-* **discord.py**
-* **Git & GitHub**
-
----
-
 ## 📂 Project Structure
 
 ```
