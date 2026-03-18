@@ -15,6 +15,8 @@ class MisaBot(commands.Bot):
         super().__init__(command_prefix=".", intents=intents) #prefixo, recebendo permissoes
     
     async def setup_hook(self):
+        from database import conectar
+        conectar()
         await carregar_cogs(self)
         await self.tree.sync()
         print("Cogs carregadas!")
